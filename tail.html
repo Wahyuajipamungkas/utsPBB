@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex min-h-screen flex-row">
+        <aside class="bg-blue-900 w-50 text-white">
+            
+            <div class="p-4">
+                <h2 class="font-bold ">Aplikasi Mahasiswa</h2>
+            <nav class="mt-8  ml-3">
+                <ul>
+                    <li><a href="#">Dashboart</a></li>
+                    <li><a href="#">Mahasiswa</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </nav>
+            </div>
+        </aside>
+
+        <!--Content-->
+        <div class="flex flex-col flex-1">
+            <header class="bg-blue-900 p-2">
+                <div class="flex justify-end">
+                <button class="text-white bg-slate-600 px-4 py-0.5 rounded">Logout</button>
+                </div>
+            </header>
+
+            <div class="flex justify-between">
+                <h2 class="font-bold">List Mahasiswa</h2>
+                <button class="bg-gray-500 rounded px-2 py-1" id="model-tambah">Tambah Mahasiswa</button>
+            </div>
+            <div class="bg-white flex-grow p-4">
+                <div class="bg-white p-2 rounded-lg shadow">
+                <table class="min-w-full table-auto text-center">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th> No.</th cl>
+                            <th> Nama</th cl>
+                            <th> Nim</th cl>
+                            <th> Aksi</th cl>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Adamm</td>
+                            <td>A11200067</td>
+                            <td>
+                            <button class="bg-blue-400 rounded py-2 px-4 text-white">Edit</button>
+                            <button class="bg-red-400 rounded py-2 px-4 text-white">Hapus</button>
+                            </td>
+                            <tr class="bg-gray-200">
+                                <td>02</td>
+                                <td>dimas</td>
+                                <td>A11200067</td>
+                                <td>
+                                <button class="bg-blue-400 rounded py-2 px-4 text-white">Edit</button>
+                                <button class="bg-red-400 rounded py-2 px-4 text-white">Hapus</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>wisnu</td>
+                                <td>A11200067</td>
+                                <td>
+                                <button class="bg-blue-400 rounded py-2 px-4 text-white">Edit</button>
+                                <button class="bg-red-400 rounded py-2 px-4 text-white">Hapus</button>
+                                </td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <footer class="bg-blue-900 text-center text-white">
+                &copy; Admin warnet
+            </footer>
+        </div>
+    </div>
+
+    <div id="model-tambah" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-1/3">
+            <form action="">
+                <div class="mb-4">
+                    <label for="name">Nama: </label>
+                    <input type="text" class="w-full px-4 py-2 rounded mr-2">
+                </div>
+                <div class="flex justify-end">
+                    <button type="button" class="bg-gray-600 text-white px-4 py-2 rounded mr-2" >Batal</button>
+                    <button type="button" class="bg-blue-600 text-white px-4 py-2 rounded mr-2" >Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script></script>
+    <script></script>
+    <script>
+        $(document).ready(function(){
+            $('#btm-tambah').click(function(){
+                $('#model-tambah').removeClass('hidden')
+            });
+        });
+    </script>
+</body>
+</html>

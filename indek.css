@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgb(57, 66, 66);
+    padding: 4px;
+    text-align: right;
+}
+
+aside{
+    background-color: rgb(57, 66, 66);
+    padding: 10px;
+}
+
+footer{
+    background-color: rgb(57, 66, 66);
+    padding: 4px;
+    text-align: center;
+}
+
+
+.content{
+    background-color: aquamarine;
+    flex: 1;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+}
+
+
+
